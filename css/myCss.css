@@ -17,7 +17,7 @@ h2 {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-/* For any completed list items we strikethrough, italicize & make the color a light shade */
+/* For any completed list items we strikethrough, italicize & make the text color a lighter shade */
 .completed {
 	text-decoration: line-through;
 	font-style: italic;
