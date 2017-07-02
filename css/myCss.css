@@ -1,11 +1,20 @@
+/* Give all 'h' tags a dark blue color */
+h1, h2, h3, h4, h5 {
+	color: #190be5;
+}
+
 /* Add a shadow effect to all buttons */
 button {
 	box-shadow: 5px 5px 5px #888888;
 }
 
-/* Give all h tags a dark blue color */
-h1, h2, h3, h4, h5 {
-	color: #190be5;
+/* Add a 3-D effect to the 'h2' title*/
+h2 {
+  text-shadow: 0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 /* For any completed list items we strikethrough, italicize & make the color a light shade */
