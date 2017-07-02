@@ -28,6 +28,7 @@
 
     <!-- Give device only permission, keeping permissions to a minimum -->
     <feature name="http://api.phonegap.com/1.0/device"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
     
     <!--  No permissions (apart from default INTERNET) granted -->
     <preference name="permissions" value="none"/> 
