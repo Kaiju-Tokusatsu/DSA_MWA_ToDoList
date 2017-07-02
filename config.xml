@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.tommaguirecode.todolist"
-        version="1.0.6"
+        version="1.0.7"
         xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="https://phonegap.com/ns/1.0">
 
@@ -8,7 +8,7 @@
     <content src="index.html"></content>
 
     <!-- Application name as appears on device -->
-    <name>Tom's To-Do List</name>
+    <name>To-Do List</name>
 
     <!-- Full description of application -->
     <description>
