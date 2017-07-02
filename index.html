@@ -1,4 +1,4 @@
-<!--
+ <!--
   Module:     Mobile & Web Applications
   Assignment: Assessment 2 - SPA Angular ToDoList App
   Lecturer:   Daniel Griffin
@@ -28,7 +28,7 @@
     <!-- Use a form to capture new items and add them to the list -->
     <form name="toDoListForm" data-ng-submit="toDoAdd()">
         <!-- Use the 'required' attribute to enforce data input field is not blank -->
-        <input type="text" data-ng-model="toDoItem" required size="30" placeholder="Add List Item">
+        <input type="text" data-ng-model="toDoItem" required size="25" placeholder="Add List Item">
 
         <!-- Disable the 'Add Item' button until input data is entered and not empty -->
         <button ng-disabled="toDoListForm.$invalid">Add Item</button>
