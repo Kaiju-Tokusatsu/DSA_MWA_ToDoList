@@ -29,6 +29,5 @@
     <!-- Give device only permissions, keeping permissions to a minimum -->
     <feature name="http://api.phonegap.com/1.0/device"/>
     
-    <!--  No permissions (apart from default INTERNET) granted -->
-    <preference name="permissions" value="none"/> 
+    
 </widget>
