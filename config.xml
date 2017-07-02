@@ -26,9 +26,8 @@
     <!-- Our application icon is sized to 48px x 48px, publishing to a Huawei P9 Lite Android phone. Icon size perfect for device -->
     <icon src="icons/toDoIcon.png"/>
 
-    <!-- Give device only permission, keeping permissions to a minimum -->
+    <!-- Give device only permissions, keeping permissions to a minimum -->
     <feature name="http://api.phonegap.com/1.0/device"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
     
     <!--  No permissions (apart from default INTERNET) granted -->
     <preference name="permissions" value="none"/> 
