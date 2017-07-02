@@ -1,0 +1,64 @@
+<!--
+  Module:     Mobile & Web Applications
+  Assignment: Assessment 2 - SPA Angular ToDoList App
+  Lecturer:   Daniel Griffin
+  Student:    Thomas Maguire
+  Date:       03/07/2017
+-->
+<!DOCTYPE html>
+
+<!-- We define our SPA Angular app as our complete <html> document & use the data-ng-* to make our HTML validator compliant -->
+<html data-ng-app="toDoList" >
+
+<head>
+    <!-- Include meta tags to ensure correct charset & proper mobile device display -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include personalised css stylesheet -->
+    <link rel="stylesheet" href="css/myCss.css"/>
+
+    <title>Tom's ToDo List</title>
+</head>
+
+<!-- Define our application controller for our 'toDoList' app -->
+<body data-ng-controller="toDoController">
+    <h2>Tom's ToDo List</h2>
+
+    <!-- Use a form to capture new items and add them to the list -->
+    <form name="toDoListForm" data-ng-submit="toDoAdd()">
+        <!-- Use the 'required' attribute to enforce data input field is not blank -->
+        <input type="text" data-ng-model="toDoItem" required size="30" placeholder="Add List Item">
+
+        <!-- Disable the 'Add Item' button until input data is entered and not empty -->
+        <button ng-disabled="toDoListForm.$invalid">Add Item</button>
+    </form>
+
+    <h3>Items</h3>
+
+    <!-- Loop through the toDoList entries to display all entries in a list with checkboxes -->
+    <div data-ng-repeat="item in toDoList">
+        <input type="checkbox" data-ng-model="item.completed">
+
+        <!-- Use inline <span> rather than <div> to allign item entries with checkboxes -->
+        <span data-ng-class="{'completed':item.completed}">{{item.toDoItem}}</span>
+    </div>
+
+    <!-- Button to fire the 'Delete Completed Items' function which removes all completed items from our list -->
+    <p><br><button data-ng-click="toDoDelete()">Delete Completed Items</button></p>
+
+    <!-- Button to fire the 'Delete All Items' function which removes all items from our list -->
+    <p><br><button data-ng-click="toDoDeleteAll()">Delete All Items</button></p>
+    
+    <!-- We load our js files at the end of the body to improve performance -->
+    <!-- Include the Angular framework v1.6.4 from a local downloaded copy as we will be packaging this using PhoneGap Build -->
+    <script type="text/javascript" src="js/angular.1.6.4.min.js"></script>
+
+    <!-- Include our external JavaScript code -->
+    <script type="text/javascript" src="js/myCode.js"></script>
+
+    <!-- Reference the phonegap.js file that PhoneGap Build will automatically add -->
+    <script type="text/javascript" src="phonegap.js"></script>
+</body>
+
+</html>

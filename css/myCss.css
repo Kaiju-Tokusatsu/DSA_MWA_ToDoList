@@ -1,0 +1,16 @@
+/* Add a shadow effect to all buttons */
+button {
+	box-shadow: 5px 5px 5px #888888;
+}
+
+/* Give all h tags a dark blue color */
+h1, h2, h3, h4, h5 {
+	color: #190be5;
+}
+
+/* For any completed list items we strikethrough, italicize & make the color a light shade */
+.completed {
+	text-decoration: line-through;
+	font-style: italic;
+	color: #dcb;
+}

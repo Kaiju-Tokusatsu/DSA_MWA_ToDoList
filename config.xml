@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tommaguirecode.todolist"
+        version="1.0.4"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="https://phonegap.com/ns/1.0">
+
+    <!-- Define the application starting page -->
+    <content src="index.html"></content>
+
+    <!-- Application name as appears on device -->
+    <name>Tom's To-Do List</name>
+
+    <!-- Full description of application -->
+    <description>
+        DSA MWA Assessment 2 - Angular.js To-Do List Application
+    </description>
+
+    <!-- Full author information -->
+    <author email="thomas.maguire@webelevate.ie" href="https://digitalskillsacademy.com/">
+       Tom Maguire
+    </author>
+
+    <!-- Define the PhoneGap Build version to use -->
+    <preference name="phonegap-version" value="cli-6.5.0" />
+
+    <!-- Our application icon is sized to 48px x 48px, publishing to a Huawei P9 Lite Android phone. Icon size perfect for device -->
+    <icon src="icons/toDoIcon.png"/>
+
+    <!-- Give device only permission, keeping permissions to a minimum -->
+    <feature name="http://api.phonegap.com/1.0/device"/>
+    
+    <!--  No permissions (apart from default INTERNET) granted -->
+    <preference name="permissions" value="none"/> 
+</widget>
