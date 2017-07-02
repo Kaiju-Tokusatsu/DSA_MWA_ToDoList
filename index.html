@@ -3,11 +3,11 @@
   Assignment: Assessment 2 - SPA Angular ToDoList App
   Lecturer:   Daniel Griffin
   Student:    Thomas Maguire
-  Date:       03/07/2017
+  Date:       02/07/2017
 -->
 <!DOCTYPE html>
 
-<!-- We define our SPA Angular app as our complete <html> document & use the data-ng-* to make our HTML validator compliant -->
+<!-- We define our SPA Angular app as our complete <html> document & use data-ng-* throughout to make our HTML validator compliant -->
 <html data-ng-app="toDoList" >
 
 <head>
@@ -28,7 +28,7 @@
     <!-- Use a form to capture new items and add them to the list -->
     <form name="toDoListForm" data-ng-submit="toDoAdd()">
         <!-- Use the 'required' attribute to enforce data input field is not blank -->
-        <input type="text" data-ng-model="toDoItem" required size="25" placeholder="Add List Item">
+        <input type="text" data-ng-model="toDoItem" size="25" placeholder="Add List Item" required>
 
         <!-- Disable the 'Add Item' button until input data is entered and not empty -->
         <button ng-disabled="toDoListForm.$invalid">Add Item</button>

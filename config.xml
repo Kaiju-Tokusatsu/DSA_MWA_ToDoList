@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!-- Set a unique namespace for 'id' & application version number -->
 <widget id="com.tommaguirecode.todolist"
         version="1.0.7"
         xmlns="http://www.w3.org/ns/widgets"
@@ -23,7 +24,7 @@
     <!-- Define the PhoneGap Build version to use -->
     <preference name="phonegap-version" value="cli-6.5.0" />
 
-    <!-- Our application icon is sized to 48px x 48px, publishing to a Huawei P9 Lite Android phone. Icon size perfect for device -->
+    <!-- Our application icon is sized to 48px x 48px, publishing to a Huawei P9 Lite Android phone. Icon sized perfect for device -->
     <icon src="icons/toDoIcon.png"/>
 
     <!-- Give device only permissions, keeping permissions to a minimum -->
