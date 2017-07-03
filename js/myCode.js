@@ -1,12 +1,12 @@
-/* Setup our controller, included using the Angular module method */
+/* Setup the controller, included using the Angular module method, passing $scope as parameter */
 var app = angular.module('toDoList', []); 
 app.controller('toDoController', function($scope) {
-    /* An array to hold our ToDoList item entries */
+    /* An array to hold the ToDoList item entries */
     $scope.toDoList = [];
-    /* The current entry we are looking to add to our ToDoList */
+    /* The current entry we are looking to add to the ToDoList */
     $scope.toDoItem = "";
     
-    /* This function adds an entry to our ToDoList */
+    /* This function adds an entry to the ToDoList */
     $scope.toDoAdd = function() {
         /* Add the new ToDoList item along with its 'completed'status (initially false) */
         $scope.toDoList.push({toDoItem:$scope.toDoItem, completed:false});
@@ -14,7 +14,16 @@ app.controller('toDoController', function($scope) {
         $scope.toDoItem = "";
     };
 
-    /* This function deletes all completed entries from our ToDoList */
+    /* This function returns the number of items remaining on the ToDoList */
+    $scope.toDoNotCompleted = function() {
+        var num = 0;
+        angular.forEach($scope.toDoList, function(item) {
+          num += item.completed ? 0 : 1;
+        });
+        return num;
+    };
+
+    /* This function deletes all completed entries from the ToDoList */
     $scope.toDoDelete = function() {
         /* Make a copy of the $scope.toDoList array */
         var toDoListCopy = $scope.toDoList;
@@ -29,7 +38,7 @@ app.controller('toDoController', function($scope) {
         });
     };
 
-    /* This function deletes all entries from our ToDoList */
+    /* This function deletes all entries from the ToDoList */
     $scope.toDoDeleteAll = function() {
         /* Here we simply reset the $scope.toDoList array to empty */
         $scope.toDoList = [];

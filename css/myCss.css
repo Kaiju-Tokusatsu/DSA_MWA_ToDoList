@@ -1,14 +1,9 @@
-/* Give all 'h' tags a dark blue color */
-h1, h2, h3, h4, h5 {
-	color: #190be5;
+/* Give all 'h' & 'p' tags a dark blue color */
+h1, h2, h3, h4, h5, p {
+	color: #02378c;
 }
 
-/* Add a shadow effect to all buttons */
-button {
-	box-shadow: 5px 5px 5px #888888;
-}
-
-/* Add a 3-D effect to the 'h2' title*/
+/* Add a 3-D effect to the 'h2' title */
 h2 {
   text-shadow: 0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
@@ -17,7 +12,27 @@ h2 {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-/* For any completed list items we strikethrough, italicize & make the text color a lighter shade */
+/* Set the font size for the items remaining line */
+.items {
+	font-size: 10px;
+}
+
+/* Add some nice css effects to all buttons & set color to match app theme */
+.button {
+	background-color: #02378c;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Make the input box font size a little larger than standard & set color to match app theme */
+.addItem {
+	color: #02378c;
+	font-size: 18px;
+}
+
+/* For all completed list items then strikethrough, italicize & make the text color a lighter shade */
 .completed {
 	text-decoration: line-through;
 	font-style: italic;
